@@ -60,6 +60,26 @@ const services: Service[] = [
     note: 'BIOPSY',
     icon: <Stethoscope className="h-5 w-5" />,
   },
+  {
+    title: 'رسم العصب والعضلات',
+    note: 'EMG / NCS',
+    icon: <Activity className="h-5 w-5" />,
+  },
+  {
+    title: 'رسم المخ الكهربائي',
+    note: 'لمدة نصف ساعة، ساعة، وساعتين',
+    icon: <Activity className="h-5 w-5" />,
+  },
+  {
+    title: 'الأشعة العادية على العمود الفقري بالكامل',
+    note: 'Scanogram Whole Spine مع تحديد القياسات والزوايا',
+    icon: <CheckCircle2 className="h-5 w-5" />,
+  },
+  {
+    title: 'الأشعة العادية على الطرفين السفليين',
+    note: 'مع تحديد القياسات والزوايا',
+    icon: <CheckCircle2 className="h-5 w-5" />,
+  },
 ];
 
 const featuredServices = services.slice(0, 4);
