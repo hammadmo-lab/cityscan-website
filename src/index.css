@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "./**/*.{ts,tsx}";
+@source not "../dist";
+@source not "../node_modules";
+
+@theme {
+  --font-sans: "Cairo", sans-serif;
+  --color-primary: #f4901e;
+  --color-ink: #090d10;
+  --color-charcoal: #11171b;
+  --color-dark: #121212;
+  --color-darker: #0a0a0a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #090d10;
+  color: #ffffff;
+  margin: 0;
+}
+
+::selection {
+  background: #f4901e;
+  color: #090d10;
+}
+
+.bg-lines {
+  background-image:
+    linear-gradient(135deg, transparent 0 42%, rgba(255, 255, 255, 0.55) 42% 44%, transparent 44% 100%),
+    linear-gradient(90deg, rgba(255, 133, 21, 0.22) 1px, transparent 1px);
+  background-size: 34px 34px, 120px 120px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(9, 13, 16, 0.72);
+  padding: 1.15rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.contact-row:hover {
+  border-color: rgba(244, 144, 30, 0.75);
+  background: rgba(9, 13, 16, 0.94);
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  display: inline-flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  background: #f4901e;
+  color: #090d10;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.contact-value {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 900;
+  line-height: 1.7;
+}
