@@ -250,9 +250,15 @@ export default function App() {
           <div className="border border-primary/35 bg-ink p-8">
             <CityScanLogo className="mx-auto max-w-md" />
             <div className="mt-8 border-r-4 border-primary pr-5">
-              <p className="mt-4 text-base font-semibold leading-8 text-white/68">
-                احجز أو استفسر عن الفحوصات المتاحة عبر الهاتف أو الواتساب.
-              </p>
+              <a
+                href={whatsappBookingUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-flex min-h-12 items-center justify-center gap-2 bg-primary px-6 py-3 text-base font-black text-ink transition hover:bg-white"
+              >
+                <MessageCircle className="h-5 w-5" />
+                للحجز و الاستعلام : <span dir="ltr">01006686000</span>
+              </a>
             </div>
           </div>
 
