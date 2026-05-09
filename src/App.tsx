@@ -7,6 +7,7 @@ import {
   Facebook,
   Mail,
   MapPin,
+  MessageCircle,
   Phone,
   Smartphone,
   Radio,
@@ -86,6 +87,7 @@ const featuredServices = services.slice(0, 4);
 
 const facebookUrl = 'https://www.facebook.com/cityscan.center1';
 const androidAppUrl = 'https://play.google.com/store/apps/details?id=com.nebras.cityscan&hl=en_GB';
+const whatsappBookingUrl = 'https://wa.me/201006686000';
 const googleMapsUrl =
   'https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%B3%D9%8A%D8%AA%D9%8A+%D8%B3%D9%83%D8%A7%D9%86+%D9%84%D9%84%D8%A3%D8%A7%D8%B4%D8%B9%D8%A9%E2%80%AD/data=!4m7!3m6!1s0x14f7f15cdb1a6325:0x8ac6ac23ed55338f!8m2!3d30.5899043!4d31.4957565!16s%2Fg%2F11vs6h4myh!19sChIJJWMa21zx9xQRjzNV7SOsxoo?authuser=0&hl=en&rclk=1';
 const googleMapsEmbedUrl =
@@ -330,6 +332,15 @@ export default function App() {
       </section>
 
       <footer className="border-t border-white/10 bg-black px-5 py-6 text-center">
+        <a
+          href={whatsappBookingUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mb-4 inline-flex min-h-12 items-center justify-center gap-2 bg-primary px-6 py-3 text-base font-black text-ink transition hover:bg-white"
+        >
+          <MessageCircle className="h-5 w-5" />
+          للحجز و الاستعلام : <span dir="ltr">01006686000</span>
+        </a>
         <p className="text-sm font-bold text-white/42">
           جميع الحقوق محفوظة &copy; {new Date().getFullYear()} مركز سيتي سكان للأشعة
         </p>
